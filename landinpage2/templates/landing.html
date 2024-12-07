@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People Skills 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans">
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <h1 class="text-2xl font-bold text-blue-600">PeopleSkills 2025</h1>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
+                    <a href="#features" class="text-gray-600 hover:text-blue-600">Features</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-blue-600">Testimonials</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="relative h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600">
+            <div class="absolute inset-0">
+                <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902" alt="People collaborating" class="w-full h-full object-cover opacity-20">
+            </div>
+            <div class="relative text-center text-white space-y-6 px-4">
+                <h2 class="text-5xl font-bold">Developing People Skills in 2025</h2>
+                <p class="text-xl">Master the art of human connection in the digital age</p>
+                <button class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition duration-300">Get Started</button>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-12">About Our Mission</h2>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" alt="Team collaboration" class="rounded-lg shadow-xl">
+                    <div class="space-y-6">
+                        <p class="text-lg text-gray-600">We're committed to helping professionals develop essential interpersonal skills needed for success in 2025 and beyond.</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center"><span class="text-blue-600 mr-2">✓</span> Enhanced Communication</li>
+                            <li class="flex items-center"><span class="text-blue-600 mr-2">✓</span> Emotional Intelligence</li>
+                            <li class="flex items-center"><span class="text-blue-600 mr-2">✓</span> Leadership Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-12">Our Features</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <div class="text-4xl text-blue-600 mb-4">🎯</div>
+                        <h3 class="text-xl font-semibold mb-4">Personalized Learning</h3>
+                        <p class="text-gray-600">Tailored programs designed to meet your specific needs and goals.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <div class="text-4xl text-blue-600 mb-4">🤝</div>
+                        <h3 class="text-xl font-semibold mb-4">Interactive Workshops</h3>
+                        <p class="text-gray-600">Engage in hands-on learning experiences with industry experts.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <div class="text-4xl text-blue-600 mb-4">📊</div>
+                        <h3 class="text-xl font-semibold mb-4">Progress Tracking</h3>
+                        <p class="text-gray-600">Monitor your growth with advanced analytics and insights.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-12">What Our Users Say</h2>
+                <div id="testimonial-list" class="grid md:grid-cols-3 gap-8">
+                    <!-- Testimonials will be rendered here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Submit Testimonial Form -->
+        <section id="submit-testimonial" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-12">Share Your Experience</h2>
+                <form id="testimonial-form" class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md" onsubmit="submitTestimonial(event)">
+                    <div class="space-y-4">
+                        <label for="name" class="block text-lg font-semibold">Your Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg" placeholder="Enter your name" required>
+
+                        <label for="feedback" class="block text-lg font-semibold">Your Testimonial</label>
+                        <textarea id="feedback" name="feedback" class="w-full px-4 py-3 border border-gray-300 rounded-lg" placeholder="Share your feedback" rows="4" required></textarea>
+
+                        <button type="submit" class="w-full bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">Submit Testimonial</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-blue-600 text-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-2xl mx-auto text-center">
+                    <h2 class="text-4xl font-bold mb-8">Ready to Transform Your Skills?</h2>
+                    <p class="text-xl mb-8">Join our community and start your journey today</p>
+                    <form class="space-y-4">
+                        <label>
+                            <input type="email" placeholder="Enter your email" class="w-full px-4 py-3 rounded-lg text-gray-900">
+                        </label>
+                        <button alt="start-button"
+                                class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition duration-300">Get Started</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">PeopleSkills 2025</h3>
+                    <p class="text-gray-400">Empowering professionals with essential skills for the future.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">About Us</a></li>
+                        <li><a href="#" class="hover:text-white">Features</a></li>
+                        <li><a href="#" class="hover:text-white">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Twitter</a></li>
+                        <li><a href="#" class="hover:text-white">LinkedIn</a></li>
+                        <li><a href="#" class="hover:text-white">Instagram</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simulated API for fetching testimonials (you can replace this with a real API)
+        const testimonialsAPI = [
+            {
+                name: "Sarah Johnson",
+                feedback: "This program transformed my approach to leadership and communication.",
+                photo: "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
+                job: "CEO, Tech Innovations"
+            },
+            {
+                name: "Michael Chen",
+                feedback: "The skills I learned here have been invaluable in my career growth.",
+                photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e",
+                job: "Project Manager"
+            },
+        ];
+
+        // Function to dynamically render testimonials
+        function loadTestimonials() {
+            const testimonialContainer = document.getElementById("testimonial-list");
+            testimonialContainer.innerHTML = ''; // Clear existing testimonials
+
+            testimonialsAPI.forEach(testimonial => {
+                const testimonialElement = document.createElement('div');
+                testimonialElement.classList.add('bg-gray-50', 'p-8', 'rounded-lg', 'shadow-lg', 'hover:shadow-xl', 'transition', 'duration-300');
+                testimonialElement.innerHTML = `
+                    <p class="text-lg text-gray-600 italic mb-4">"${testimonial.feedback}"</p>
+                    <div class="flex items-center">
+                        <img src="${testimonial.photo}" alt="${testimonial.name}" class="w-16 h-16 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">${testimonial.name}</h4>
+                            <p class="text-gray-500">${testimonial.job}</p>
+                        </div>
+                    </div>
+                `;
+                testimonialContainer.appendChild(testimonialElement);
+            });
+        }
+
+        // Call function to load initial testimonials when the page loads
+        window.onload = loadTestimonials;
+
+        // Handle form submission and add the new testimonial dynamically
+        function submitTestimonial(event) {
+            event.preventDefault(); // Prevent the page from refreshing
+
+            const name = document.getElementById("name").value;
+            const feedback = document.getElementById("feedback").value;
+
+            // Create new testimonial object
+            const newTestimonial = {
+                name: name,
+                feedback: feedback,
+                photo: "https://via.placeholder.com/150", // Placeholder photo (can be replaced later)
+                job: "Anonymous" // Default job
+            };
+
+            // Add the new testimonial to the API array (or send it to your real API)
+            testimonialsAPI.push(newTestimonial);
+
+            // Re-render the testimonials list
+            loadTestimonials();
+
+            // Clear the form
+            document.getElementById("testimonial-form").reset();
+        }
+    </script>
+</body>
+</html>
